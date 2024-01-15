@@ -1,0 +1,127 @@
+*{ 
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+main{
+    max-width:1620px ;
+    padding: 0 150px ;
+}
+header{
+    max-width:1620px;
+   padding-top: 60px;
+   padding-bottom:100px;
+   padding-left:150px;
+   padding-right: 150px;
+}
+nav{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width:40px;
+}
+.logo h1{
+    color: #131318;
+font-size: 30px;
+font-weight: 800;
+}
+span{
+    color: #FF5400;
+}
+nav > ul{
+   display: flex;
+   justify-content: space-around;
+   gap: 30px;
+}
+nav li{
+text-transform: capitalize;
+}
+nav ul li a{
+    color: #424247;
+    font-size: 16px;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color: #FF5400;
+}
+nav ul li a.active{
+    color: #FF5400;
+}
+/* banner part */
+.banner{
+    height: 500px;
+    background-image: url(../images/Group\ 13\ \(1\)\ \(1\).png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 8px;
+}
+.banner-content{
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    width: 100%;
+    height: 500px;
+    border-radius:8px;
+}
+.banner-title{
+    padding-top: 100px;
+}
+.banner-title h1{
+    color: #FFF;
+font-size: 64px;
+font-weight: 800;
+padding-bottom:  24px;
+}
+.banner-title p{
+    width: 600px;
+    color: #FFF;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+margin: auto;
+padding-bottom: 40px;
+}
+form{
+ display: inline-flex;
+padding: 16px;
+align-items: flex-start;
+gap: 24px;
+border-radius: 8px;
+background: rgba(57, 25, 25, 0.3);
+}
+form input,select,button{
+    width: 174px;
+height: 52px;
+border-radius: 8px;
+border: none;
+outline: 0;
+padding-left: 10px;
+text-transform: capitalize;
+}
+button {
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+border-radius: 8px;
+background: #FF5400;
+border: none;
+}
+button a{
+    color: #FFF;
+}
+button a i {
+    padding-right:10px;
+}

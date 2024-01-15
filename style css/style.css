@@ -62,12 +62,13 @@ nav ul li a.active{
 }
 /* banner part */
 .banner{
-    height: 500px;
+    height:600px;
     background-image: url(../images/Group\ 13\ \(1\)\ \(1\).png) ;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     border-radius: 8px;
+    background-position: fixed;
 }
 .banner-content{
     border-radius: 16px;
@@ -77,13 +78,14 @@ nav ul li a.active{
     border-radius:8px;
 }
 .banner-title{
-    padding-top: 100px;
+    padding:100px 0;
+    
 }
 .banner-title h1{
     color: #FFF;
 font-size: 64px;
 font-weight: 800;
-padding-bottom:  24px;
+padding-bottom:24px;
 }
 .banner-title p{
     width: 600px;
@@ -94,16 +96,21 @@ line-height: 20px;
 margin: auto;
 padding-bottom: 40px;
 }
-form{
- display: inline-flex;
-padding: 16px;
-align-items: flex-start;
-gap: 24px;
+.form{
+ display:inline-flex;
+ flex: 1;
+gap: 30px;
 border-radius: 8px;
-background: rgba(57, 25, 25, 0.3);
+background: rgba(255, 255, 255, 0.30);
+width: 700px;
+margin: auto;
+height: 100px;
+align-items: center;
+padding:  0 15px;
+
 }
-form input,select,button{
-    width: 174px;
+.form input,select,button{
+width: 200px;
 height: 52px;
 border-radius: 8px;
 border: none;
@@ -124,4 +131,43 @@ button a{
 }
 button a i {
     padding-right:10px;
+}
+/* media break responsive */
+@media screen and (max-width:576px) {
+    header,
+    .banner-content,
+    .banner-title{
+        padding: 10px;
+      }
+      nav,
+      .form
+      {
+        flex-direction: column;
+      }
+      .form{
+        width: auto;
+        height: auto;
+        padding: 16px;
+        gap:16px;
+      }
+    .banner-title,
+    .banner-title p{
+    text-align: center;
+    width: auto;
+  
+}
+}
+@media screen and (min-width:576px) and (max-width:960px){
+    header,
+    .banner-title,
+    .banner-title p{
+        padding: 10px;
+      } 
+      .form {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 16px;
+        gap:20px
+      }
 }

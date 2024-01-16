@@ -2,7 +2,6 @@
     padding:0 ;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
 }
 body{
@@ -47,6 +46,7 @@ nav > ul{
    gap: 30px;
 }
 nav li{
+ list-style: none;
 text-transform: capitalize;
 }
 nav ul li a{
@@ -62,7 +62,7 @@ nav ul li a.active{
 }
 /* banner part */
 .banner{
-    height:600px;
+    height:650px;
     background-image: url(../images/Group\ 13\ \(1\)\ \(1\).png) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,6 +117,7 @@ border: none;
 outline: 0;
 padding-left: 10px;
 text-transform: capitalize;
+color: #59595c;
 }
 button {
 text-align: center;
@@ -132,18 +133,144 @@ button a{
 button a i {
     padding-right:10px;
 }
+ /* our tour */
+ .tour-section{
+    padding-top:50px;
+    padding-bottom: 100px;
+ }
+ .our-tour{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px ;
+ }
+ .left-content {
+    width: 500px;
+ }
+.left-content h1{
+    color: #131318;
+font-size: 40px;
+font-weight: 800;
+padding-bottom: 24px;
+}
+.left-content p{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+padding-bottom: 15px;
+padding-top: 10px;
+}
+.left-content ul li{
+    list-style: none;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;  
+    padding-left: 20px;
+    padding: 5px 0;
+
+}
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    }
+.right-content img{
+ width:100%;
+height: 550px;
+}
+ /* destination style */
+ .destination-title{
+    text-align: center;
+ }
+ .destination-img{
+    width:100%;
+ }
+.img-1{ 
+    border-radius: 16px;
+    border-radius: 16px;
+    width: 100%;
+display: flex;
+  gap: 24px;
+}
+.img-1 .image-1{
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;    
+     width: 50%;
+}
+.img-1 .image-2{
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
+    width: 48%;
+}
+.img-2{
+    width: 100%;
+   display: flex;
+    gap: 24px;
+    padding-top: 24px;
+}
+.img-2 .image-3{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+    width: 30%;
+}
+.img-2 .image-4{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+ width: 50%;
+}
+.img-2 .image-5{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+    width: 20%;
+}
+.img-3{
+    width: 100%;
+   display: flex;
+    gap: 24px;
+    padding-top: 24px;
+}
+.img-3 .image-6{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+    width: 40%;
+}
+.img-3 .image-7{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+ width: 58%;
+}
+
 /* media break responsive */
-@media screen and (max-width:576px) {
+@media screen and (max-width:576px){
     header,
+    main,
     .banner-content,
-    .banner-title{
+    .banner-title,
+    .tour-section,
+    .our-tour
+    {
         padding: 10px;
       }
       nav,
-      .form
+      .form,
+      .our-tour
       {
         flex-direction: column;
       }
+      .our-tour{
+        gap:30px
+      }
+      .left-content,.right-content
+      {
+        width: auto;
+        height: auto;
+      }
+  
       .form{
         width: auto;
         height: auto;
@@ -151,17 +278,20 @@ button a i {
         gap:16px;
       }
     .banner-title,
-    .banner-title p{
+    .banner-title p
+    {
     text-align: center;
-    width: auto;
-  
+    width: auto; 
+    }
 }
-}
+
 @media screen and (min-width:576px) and (max-width:960px){
     header,
+    main,
     .banner-title,
+    .tour-section,
     .banner-title p{
-        padding: 10px;
+        padding: 20px;
       } 
       .form {
         flex-direction: column;
@@ -169,5 +299,20 @@ button a i {
         height: auto;
         padding: 16px;
         gap:20px
+      }
+      .our-tour
+      {
+        flex-direction: column;
+      }
+      .left-content{
+        text-align: start;
+      }
+      .our-tour{
+        gap:50px;
+      }
+      .left-content,.right-content
+      {
+        width: auto;
+        height: auto;
       }
 }

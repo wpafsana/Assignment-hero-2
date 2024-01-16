@@ -469,6 +469,92 @@ padding-bottom: 15px;
     text-align: center;
    margin: 0 auto;  
 }
+ /* newsletter part */
+ .newsletter{
+    padding-bottom: 100px;
+ }
+ .news-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+ }
+ .left-news-content{
+    width: 450px;
+    height:380px ;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    background: #FFF;
+  padding: 40px;
+ }
+ .left-news-content h1{
+    color: #131318;
+font-size: 24px;
+font-weight: 800;
+padding-bottom: 20px;
+ }
+ .left-news-content p{
+    color: #5A5A5D;
+font-weight: 400;
+line-height: 20px;
+padding-bottom: 20px;
+ }
+.left-news-content .input{
+    width: 100%;  
+    height: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding-left: 15px;
+    outline: 0;
+    border: none;
+  }
+  .Subscribe{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #FF5400;
+  }
+.right-news-content{
+    width: 600px;
+    height: 380px;
+}
+.right-news-content img{
+    width: 100%;
+}
+.badgge{ 
+    text-align: center;
+ border-radius: 16px;
+background: #FF5400;
+width: 300px;
+position: relative;
+left: 250px;
+height: 100px;
+top:-170px;
+transform: rotate(-19.628deg);
+}
+.badgge p{
+    color: #FFF;
+font-family: Mulish;
+font-size: 20px;
+font-weight: 400;
+padding-top: 20px;
+
+}
+.badgge h5{
+    color: #FFF;
+font-size: 25px;
+font-weight: 800;
+}
+
+
+
+
+/* footer part */
 .footer-section{
     text-align: center;
     background: rgba(19, 19, 24, 0.05);
@@ -495,18 +581,15 @@ margin: 0 auto;
  font-size: 30px;
  padding-right: 20px;
  padding-bottom: 50px;
-color:#FF5400;
+color:#f47434;
 padding-top: 20px;
 }
-hr{ width: 700px;
+hr{ width: 800px;
     margin: 0 auto;
     color: #59595c;
-    opacity: 0.2;
+    opacity: 0.4;
     height: 1px;
 }
-
-
-
 
 
 /* media break responsive */
@@ -522,8 +605,8 @@ hr{ width: 700px;
     .discount-section,
     .card-section,
     .discount,
-    .packeges
-    footer
+    .packeges,
+    .newsletter
     {
         padding: 10px;
       }
@@ -535,7 +618,8 @@ hr{ width: 700px;
       .our-tour,
       .part-1,
       .part-2,
-      .part-3
+      .part-3,
+      .news-content
       {
         flex-direction: column;
       }
@@ -587,6 +671,25 @@ hr{ width: 700px;
        height: 300px;
       
      }
+     .news-content{
+        align-items: center;
+     }
+     .left-news-content,.right-news-content{
+        width: 380px;
+        height: 400px;
+        gap: 30px;
+     }
+     .badgge{
+        width: 230px;
+        text-align: center;
+        border-radius: 16px;
+       background: #FF5400;
+       position: relative;
+       left:100px;
+       height: 80px;
+       top:-130px;
+       transform: rotate(-19.628deg);
+   }
       .form{
         width: auto;
         height: auto;
@@ -600,16 +703,31 @@ hr{ width: 700px;
     text-align: center;
     width: auto; 
     }
+    .footer-section{ margin: 0;
+        padding:50px 0 0 0 ;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:960px){
     header,
     main,
+    .banner-content,
     .banner-title,
     .tour-section,
-    .banner-title p{
+    .our-tour,
+    .destination,
+    .choose-section,.choose-content,
+    .discount-section,
+    .card-section,
+    .discount,
+    .packeges,
+    .newsletter,
+    .news-content{
         padding: 20px;
       } 
+      .banner{
+       height: 600px;
+      }
       .form {
         flex-direction: column;
         width: auto;
@@ -617,7 +735,23 @@ hr{ width: 700px;
         padding: 16px;
         gap:20px
       }
-      .our-tour
+      .left-news-content,.right-news-content{
+        width: 380px;
+        height: 400px;
+        gap: 30px;
+     }
+.badgge{ 
+    text-align: center;
+ border-radius: 16px;
+background: #FF5400;
+width: 300px;
+position: relative;
+left: 250px;
+height: 100px;
+top:-170px;
+transform: rotate(-19.628deg);
+}
+      .our-tour,.news-content
       {
         flex-direction: column;
       }
@@ -632,4 +766,37 @@ hr{ width: 700px;
         width: auto;
         height: auto;
       }
+      .footer-section{ 
+        margin: 0;
+       padding: 50px 0 0 0;
+    }
+    .choose-content {
+        grid-template-columns: 1fr;
+      }
+      .thirt-part{
+        grid-column: span 1;
+      }
+      .choose-content{
+        padding-top: 10px;
+      }
+      .choose-content .hotel,.choose-content .service, 
+      .choose-content .Price{
+        width: auto;
+        height: 350px; 
+      }
+     .right-news-content{
+        width: 600px;
+        height: 380px;
+    }
+    .left-news-content{
+        width: 600px;
+        height:400px ;
+     }
+     .news-content{
+        text-align: center;
+     }
+    .news-content{
+        text-align: center;
+        align-items: center;
+    }
 }

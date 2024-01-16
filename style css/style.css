@@ -464,6 +464,46 @@ font-size: 13px;
 font-weight: 400;
 padding-bottom: 15px;
 }
+.packeges{
+    padding-top: 50px;
+    text-align: center;
+   margin: 0 auto;  
+}
+.footer-section{
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    height: 400px; 
+}
+.footer-section{
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-section p{
+    width: 500px;
+    color: #5A5A5D;
+font-size: 13px;;
+font-weight: 400;
+line-height: 20px; 
+padding:15px 0;
+margin: 0 auto;
+}
+.footer-section img{
+   width: 30px;
+}
+.social-icons a i{
+ font-size: 30px;
+ padding-right: 20px;
+ padding-bottom: 50px;
+color:#FF5400;
+padding-top: 20px;
+}
+hr{ width: 700px;
+    margin: 0 auto;
+    color: #59595c;
+    opacity: 0.2;
+    height: 1px;
+}
 
 
 
@@ -481,7 +521,9 @@ padding-bottom: 15px;
     .choose-section,.choose-content,
     .discount-section,
     .card-section,
-    .discount
+    .discount,
+    .packeges
+    footer
     {
         padding: 10px;
       }
@@ -515,7 +557,7 @@ padding-bottom: 15px;
         gap:30px
       }
       .left-content,
-      .right-content
+      .right-content,hr,.footer-section p
       {
         width: auto;
       }
@@ -525,7 +567,7 @@ padding-bottom: 15px;
         padding: 10px;
       }
       .destination-title,.destination-title p,
-      .choose-title,.discount-title{
+      .choose-title,.discount-title,.footer-section{
         text-align: center;
         width: auto;
      }

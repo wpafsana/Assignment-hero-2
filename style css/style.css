@@ -184,66 +184,109 @@ padding-top: 10px;
 height: 550px;
 }
  /* destination style */
+ .destination{
+    padding-bottom: 100px;
+ }
  .destination-title{
     text-align: center;
  }
- .destination-img{
-    width:100%;
+ .destination-title h1{  
+    color: #131318;
+font-size: 35px;
+font-weight: 800;
+padding-bottom: 20px;
  }
-.img-1{ 
-    border-radius: 16px;
-    border-radius: 16px;
+ .destination-title p{
+ color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+width: 600px;
+margin: 0 auto;
+padding-bottom: 30px;
+ }
+ .img-para{
+    color: #FFF;
+text-align: center;
+font-size: 28px;
+font-weight: 800;
+padding-top: 120px;
+ }
+.part-1{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-display: flex;
-  gap: 24px;
+    gap:24px
+    
 }
-.img-1 .image-1{
+.img-1{
     border-radius: 16px;
-    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;    
-     width: 50%;
-}
-.img-1 .image-2{
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
-    width: 48%;
+   background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 5.png), lightgray 50% / cover no-repeat;
+ background-repeat: no-repeat;
+    width: 50%;
+    height: 300px;
+
 }
 .img-2{
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 8.png), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+}
+.part-2{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-   display: flex;
-    gap: 24px;
+    gap:24px;
     padding-top: 24px;
-}
-.img-2 .image-3{
-    border-radius: 16px;
-background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
-    width: 30%;
-}
-.img-2 .image-4{
-    border-radius: 16px;
-background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
- width: 50%;
-}
-.img-2 .image-5{
-    border-radius: 16px;
-background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
-    width: 20%;
+    padding-bottom: 24px;
 }
 .img-3{
-    width: 100%;
-   display: flex;
-    gap: 24px;
-    padding-top: 24px;
-}
-.img-3 .image-6{
     border-radius: 16px;
-background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 6.png), lightgray 50% / cover no-repeat;
+ height: 300px;
+ width: 30%;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.img-4{ 
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 7.png), lightgray 50% / cover no-repeat;
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+width: 40%;
+}
+.img-5{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 9.png), lightgray 50% / cover no-repeat;
+ height: 300px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 30%;
+}
+.part-3{
+    display: flex;
+    justify-content: space-between;
+  gap:24px;
+}
+.img-6{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 10.png), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    height: 300px;
     width: 40%;
 }
-.img-3 .image-7{
+.img-7{
     border-radius: 16px;
-background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
- width: 58%;
+background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 11.png), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 60%;
+    height:300px ;
 }
+
 
 /* media break responsive */
 @media screen and (max-width:576px){
@@ -252,25 +295,37 @@ background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.
     .banner-content,
     .banner-title,
     .tour-section,
-    .our-tour
+    .our-tour,
+    .destination
     {
         padding: 10px;
       }
       nav,
       .form,
-      .our-tour
+      .our-tour,
+      .part-1,
+      .part-2,
+      .part-3
       {
         flex-direction: column;
       }
       .our-tour{
         gap:30px
       }
-      .left-content,.right-content
+      .left-content,
+      .right-content
       {
         width: auto;
-        height: auto;
       }
-  
+      .img-1,.img-2,.img-3,.img-4,.img-5,.img-6,.img-7{
+        width: 350px;
+        align-self: center;
+        padding: 10px;
+      }
+      .destination-title,.destination-title p{
+        text-align: center;
+        width: auto;
+     }
       .form{
         width: auto;
         height: auto;
@@ -280,6 +335,7 @@ background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.
     .banner-title,
     .banner-title p
     {
+     text-align: center;
     text-align: center;
     width: auto; 
     }

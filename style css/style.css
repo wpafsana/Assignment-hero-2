@@ -62,7 +62,7 @@ nav ul li a.active{
 }
 /* banner part */
 .banner{
-    height:650px;
+    height:500px;
     background-image: url(../images/Group\ 13\ \(1\)\ \(1\).png) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -286,7 +286,85 @@ background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.
     width: 60%;
     height:300px ;
 }
+/* WHY choose part */
+.choose-section{
+    padding-bottom: 100px;
+}
+.choose-title{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+.choose-title h1{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.choose-title p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.choose-content{
+    display: grid;
+    grid-template-columns:repeat( 2, 1fr);
+    gap: 30px;
+    padding-top: 48px;
+}
+.thirt-part{
+    grid-column: span 2;
+    margin: 0 auto;
+}
+.hotel img,.service img,.Price img{
+    width: 60px;
 
+}
+.hotel h3,.service h3, .Price h3{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ 
+}
+.hotel p, .service p, .Price p{
+    color: #5A5A5D;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+.choose-content .hotel{
+    width: 500px;
+    height: 280px;
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgb(251, 181, 99, 0.05);
+padding-left: 32px;
+padding-top: 50px;
+}
+.choose-content .service{
+    width: 500px;
+    height: 280px;
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(124, 229, 255, 0.05);
+padding-left: 32px;
+padding-top: 50px;
+}
+.choose-content .Price{
+  
+    width: 500px;
+    height: 280px;
+    border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+padding-left: 32px;
+padding-top: 50px;
+}
 
 /* media break responsive */
 @media screen and (max-width:576px){
@@ -296,9 +374,13 @@ background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.
     .banner-title,
     .tour-section,
     .our-tour,
-    .destination
+    .destination,
+    .choose-section,.choose-content
     {
         padding: 10px;
+      }
+      .banner{
+        height: 700px;
       }
       nav,
       .form,
@@ -308,6 +390,23 @@ background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.
       .part-3
       {
         flex-direction: column;
+      }
+      .choose-content {
+        grid-template-columns: 1fr;
+      }
+      .thirt-part{
+        grid-column: span 1;
+    
+      }
+      .choose-content{
+        padding-top: 10px;
+      }
+      .choose-content .hotel,.choose-content .service, 
+      .choose-content .Price{
+        width: auto;
+        height: 350px;
+       
+        
       }
       .our-tour{
         gap:30px
@@ -322,7 +421,8 @@ background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.
         align-self: center;
         padding: 10px;
       }
-      .destination-title,.destination-title p{
+      .destination-title,.destination-title p,
+      .choose-title{
         text-align: center;
         width: auto;
      }
